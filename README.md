@@ -1,0 +1,1 @@
+# multiprocessing_synchronous_camera
