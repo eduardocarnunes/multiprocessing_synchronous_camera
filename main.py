@@ -55,15 +55,15 @@ if args['opt'] == 'video':
                          'video_camera_2.avi')
     
 if args['opt'] == 'capture-real':
-    thread1 = camera_thread.CameraThreadPreviewSave("Camera 0", 
+    thread1 = camera_thread.CameraThreadPreviewSave("Camera 1", 
                                                     0, 
                                                     config.VIDEO_RESULT_PATH_CAMERA_1,
-                                                    "camera_1_real_time.avi")
+                                                    "camera_1_real_time.mp4")
     
     thread2 = camera_thread.CameraThreadPreviewSave("Camera 2", 
                                                     1, 
                                                     config.VIDEO_RESULT_PATH_CAMERA_2,
-                                                    "camera_2_real_time.avi")
+                                                    "camera_2_real_time.mp4")
     
     thread1.start()
     thread2.start()
